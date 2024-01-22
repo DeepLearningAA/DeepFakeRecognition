@@ -15,6 +15,12 @@ Donde:
 - $\beta$: Factor de escala para la resolución.
 - $\phi$: Parámetro de modelo que controla el tamaño del modelo.
 
+El modelo EfficientNet se destaca por su rendimiento, obteniendo un `accuracy` del 70% en el conjunto de validación y un 74% en el conjunto de prueba. Además, se logra un `recall` del 70%, un `f1 score` del 72%. Los resultados se visualizan en la siguiente matriz de confusión:
+
+<p align="center"><img src="images/cm_eff_1.png"/></p>
+
+Puede descargarse dicho modelo en el siguiente [enlace](models/efficientnet_ft.pth)
+
 ### MNA-Net
 
 MNA-Net es otro modelo de red neuronal que se implementa mediante transfer learning y fine tuning. La arquitectura específica y las fórmulas asociadas se encuentran detalladas en el notebook [mna-net.ipynb].
@@ -34,11 +40,3 @@ ResNeXt es una extensión de ResNet que utiliza un enfoque de "cardinalidad" par
 ### VGG16
 
 VGG16 es una arquitectura clásica conocida por su simplicidad y efectividad. La implementación en este repositorio se lleva a cabo mediante transfer learning y fine tuning.
-
-### EfficientNet
-
-El modelo EfficientNet se destaca por su rendimiento, obteniendo un `accuracy` del 70% en el conjunto de validación y un 74% en el conjunto de prueba. Además, se logra un `recall` del 70%, un `f1 score` del 72%. Los resultados se visualizan en la siguiente matriz de confusión:
-
-<p align="center"><img src="images/cm_eff_1.png"/></p>
-
-Puede descargarse dicho modelo en el siguiente [enlace](models/efficientnet_ft.pth)
