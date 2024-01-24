@@ -6,16 +6,7 @@ Este repositorio presenta implementaciones de técnicas de transfer learning y f
 
 ### EfficientNet
 
-EfficientNet es un modelo de red neuronal convolucional (CNN) que utiliza un enfoque de escalado compuesto para mejorar simultáneamente la profundidad, el ancho y la resolución del modelo. La implementación de EfficientNet en este repositorio se realiza mediante transfer learning y fine tuning. La fórmula de escalado compuesto es:
-
-<p align="center">Escalado Compuesto = $\alpha^\phi \times \beta^\psi $</p>
-
-Donde:
-- $\alpha$: Factor de escala para el ancho.
-- $\beta$: Factor de escala para la resolución.
-- $\phi$: Parámetro de modelo que controla el tamaño del modelo.
-
-El modelo EfficientNet se destaca por su rendimiento, obteniendo un `accuracy` del 70% en el conjunto de validación y un 74% en el conjunto de prueba. Además, se logra un `recall` del 70%, un `f1 score` del 72%. Los resultados se visualizan en la siguiente matriz de confusión:
+EfficientNet es un modelo de red neuronal convolucional (CNN) que utiliza un enfoque de escalado compuesto para mejorar simultáneamente la profundidad, el ancho y la resolución del modelo. La implementación de EfficientNet en este repositorio se realiza mediante transfer learning y fine tuning. El modelo EfficientNet se destaca por su rendimiento, obteniendo un `accuracy` del 70% en el conjunto de validación y un 74% en el conjunto de prueba. Además, se logra un `recall` del 70%, un `f1 score` del 72%. Los resultados se visualizan en la siguiente matriz de confusión:
 
 <p align="center"><img src="images/cm_eff_1.png"/></p>
 
